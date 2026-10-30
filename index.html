@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картопляна Хата - Піцерія у Білій Церкві</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">Картопляна Хата</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Забронювати</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="min-h-[80vh] relative flex items-center justify-center bg-gradient-to-br from-black via-neutral-900 to-amber-950 text-center px-6">
+        <div class="max-w-4xl mx-auto z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-amber-400">Картопляна Хата</h1>
+            <p class="text-xl md:text-2xl mb-8 text-neutral-300">Піцерія у Білій Церкві</p>
+            <a href="services.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition inline-block">Переглянути меню</a>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 text-amber-500">Популярні страви</h2>
+            <p class="text-neutral-400">Спробуйте найкраще з нашого меню</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="bg-neutral-800 rounded-2xl shadow-lg border border-neutral-700 overflow-hidden flex flex-col">
+                <div class="h-48 bg-gradient-to-tr from-black to-amber-600 flex items-center justify-center text-2xl font-bold text-amber-200">Фірмова піца</div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-amber-400">Піца «Картопляна Хата»</h3>
+                        <p class="text-neutral-400 mb-4">Фірмова рецептура, ніжне тісто, відбірні інгредієнти та багато сиру.</p>
+                    </div>
+                    <span class="text-amber-500 font-bold text-lg">Традиційний смак</span>
+                </div>
+            </div>
+            <div class="bg-neutral-800 rounded-2xl shadow-lg border border-neutral-700 overflow-hidden flex flex-col">
+                <div class="h-48 bg-gradient-to-tr from-black to-amber-700 flex items-center justify-center text-2xl font-bold text-amber-200">Картопляні страви</div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-amber-400">Фірмові страви з картоплі</h3>
+                        <p class="text-neutral-400 mb-4">Соковиті та ситні страви, які є візитівкою нашого закладу.</p>
+                    </div>
+                    <span class="text-amber-500 font-bold text-lg">Рекомендуємо</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-neutral-400 py-12 border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-amber-500 text-lg font-bold mb-4">Картопляна Хата</h3>
+                <p>Затишна піцерія у Білій Церкві для всієї родини.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p>бульвар Олександрійський, 97</p>
+                <p>Біла Церква, Україна</p>
+                <p class="mt-2 text-amber-400">+380970383839</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-amber-500 transition">Головна</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Меню</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-500 transition">Забронювати</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-500 transition">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>"},{"path":"about.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Картопляна Хата</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">Картопляна Хата</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Забронювати</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-neutral-400">
+        <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-amber-500">Про нас</span>
+    </div>
+
+    <section class="py-12 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-amber-500">Про нас</h1>
+        <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700 space-y-6 text-neutral-300 leading-relaxed">
+            <p>Картопляна Хата — це затишна піцерія у місті Біла Церква, яка пропонує смачну піцу та різноманітні страви для своїх відвідувачів. Заклад розташований за адресою бульвар Олександрійський, 97 та користується популярністю серед місцевих мешканців.</p>
+            <p>На сторінці закладу у Facebook та на картах Google відвідувачі діляться своїми враженнями про атмосферу та обслуговування. Заклад працює для того, щоб дарувати смачні емоції своїм гостям щодня.</p>
+            <p>Тут ви зможете приємно провести час з друзями чи родиною, насолоджуючись улюбленими стравами традиційного меню піцерії.</p>
+        </div>
+
+        <div class="mt-12">
+            <h2 class="text-2xl font-bold mb-6 text-amber-500">Особливості закладу</h2>
+            <div class="bg-neutral-800 p-6 rounded-xl border border-neutral-700">
+                <ul class="list-disc list-inside space-y-3 text-neutral-300">
+                    <li>Заклад розташований у місті Біла Церква на бульварі Олександрійському, 97.</li>
+                    <li>Затишна атмосфера для сімейного відпочинку та зустрічей з друзями.</li>
+                    <li>Привітний персонал та смачна кухня.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-neutral-400 py-12 border-t border-neutral-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-amber-500 text-lg font-bold mb-4">Картопляна Хата</h3>
+                <p>Затишна піцерія у Білій Церкві для всієї родини.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p>бульвар Олександрійський, 97</p>
+                <p>Біла Церква, Україна</p>
+                <p class="mt-2 text-amber-400">+380970383839</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-amber-500 transition">Головна</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Меню</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-500 transition">Забронювати</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-500 transition">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>"},{"path":"services.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Картопляна Хата</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">Картопляна Хата</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Забронювати</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-neutral-400">
+        <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-amber-500">Меню</span>
+    </div>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4 text-amber-500">Наше Меню</h1>
+            <p class="text-neutral-400">Оберіть улюблені страви з нашого асортименту</p>
+        </div>
+
+        <div class="space-y-12">
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-amber-400 border-b border-neutral-800 pb-2">Піца</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-neutral-800 rounded-2xl shadow-lg border border-neutral-700 overflow-hidden p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-500">Піца «Картопляна Хата»</h3>
+                        <p class="text-neutral-400 mb-4">Фірмовий рецепт з сиром та начинкою.</p>
+                        <span class="text-amber-400 font-semibold">Спеціалітет</span>
+                    </div>
+                    <div class="bg-neutral-800 rounded-2xl shadow-lg border border-neutral-700 overflow-hidden p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-500">Піца «М'ясна»</h3>
+                        <p class="text-neutral-400 mb-4">Різні види м'яса, ароматні спеції та сир.</p>
+                        <span class="text-amber-400 font-semibold">Популярне</span>
+                    </div>
+                    <div class="bg-neutral-800 rounded-2xl shadow-lg border border-neutral-700 overflow-hidden p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-500">Піца «Сирна»</h3>
+                        <p class="text-neutral-400 mb-4">Добірні сорти сиру для справжніх гурманів.</p>
+                        <span class="text-amber-400 font-semibold">Ніжний смак</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-amber-400 border-b border-neutral-800 pb-2">Основні страви та закуски</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-neutral-800 rounded-2xl shadow-lg border border-neutral-700 overflow-hidden p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-500">Картопля по-селянськи</h3>
+                        <p class="text-neutral-400 mb-4">Ароматна картопля з травами та спеціями.</p>
+                        <span class="text-amber-400 font-semibold">Класика</span>
+                    </div>
+                    <div class="bg-neutral-800 rounded-2xl shadow-lg border border-neutral-700 overflow-hidden p-6">
+                        <h3 class="text-xl font-bold mb-2 text-amber-500">Фірмові закуски</h3>
+                        <p class="text-neutral-400 mb-4">Ідеально доповнять ваше замовлення.</p>
+                        <span class="text-amber-400 font-semibold">Смачно</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-neutral-400 py-12 border-t border-neutral-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-amber-500 text-lg font-bold mb-4">Картопляна Хата</h3>
+                <p>Затишна піцерія у Білій Церкві для всієї родини.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p>бульвар Олександрійський, 97</p>
+                <p>Біла Церква, Україна</p>
+                <p class="mt-2 text-amber-400">+380970383839</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-amber-500 transition">Головна</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Меню</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-500 transition">Забронювати</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-500 transition">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>"},{"path":"gallery.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Картопляна Хата</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">Картопляна Хата</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Забронювати</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-neutral-400">
+        <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-amber-500">Галерея</span>
+    </div>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4 text-amber-500">Галерея закладу</h1>
+            <p class="text-neutral-400">Атмосфера нашої піцерії</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-neutral-800 to-amber-900 flex items-center justify-center text-amber-200 font-bold text-lg p-4 text-center">Інтер'єр піцерії</div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-neutral-800 to-amber-800 flex items-center justify-center text-amber-200 font-bold text-lg p-4 text-center">Наша піца</div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-neutral-800 to-amber-950 flex items-center justify-center text-amber-200 font-bold text-lg p-4 text-center">Затишна зала</div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-neutral-800 to-amber-700 flex items-center justify-center text-amber-200 font-bold text-lg p-4 text-center">Страви від шефа</div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-neutral-800 to-amber-900 flex items-center justify-center text-amber-200 font-bold text-lg p-4 text-center">Барна зона</div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-neutral-800 to-amber-800 flex items-center justify-center text-amber-200 font-bold text-lg p-4 text-center">Деталі закладу</div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-neutral-400 py-12 border-t border-neutral-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-amber-500 text-lg font-bold mb-4">Картопляна Хата</h3>
+                <p>Затишна піцерія у Білій Церкві для всієї родини.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p>бульвар Олександрійський, 97</p>
+                <p>Біла Церква, Україна</p>
+                <p class="mt-2 text-amber-400">+380970383839</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-amber-500 transition">Головна</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Меню</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-500 transition">Забронювати</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-500 transition">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>"},{"path":"booking.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забронювати - Картопляна Хата</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">Картопляна Хата</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Забронювати</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-neutral-400">
+        <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-amber-500">Забронювати</span>
+    </div>
+
+    <section class="py-12 px-6">
+        <div class="max-w-2xl mx-auto bg-neutral-800 rounded-3xl shadow-2xl p-10 border border-neutral-700">
+            <h1 class="text-3xl font-bold mb-2 text-amber-500 text-center">Бронювання столика</h1>
+            <p class="text-neutral-400 text-center mb-8">Заповніть форму нижче для бронювання</p>
+            
+            <form action="https://formsubmit.co/hello@example.com" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-neutral-300 mb-2">Ваше ім'я</label>
+                    <input type="text" name="name" required class="w-k w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-neutral-300 mb-2">Номер телефону</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-neutral-300 mb-2">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-neutral-300 mb-2">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-neutral-300 mb-2">Кількість гостей</label>
+                    <input type="number" name="guests" min="1" value="2" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl text-white focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl hover:opacity-95 transition">Забронювати столик</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-black text-neutral-400 py-12 border-t border-neutral-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-amber-500 text-lg font-bold mb-4">Картопляна Хата</h3>
+                <p>Затишна піцерія у Білій Церкві для всієї родини.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p>бульвар Олександрійський, 97</p>
+                <p>Біла Церква, Україна</p>
+                <p class="mt-2 text-amber-400">+380970383839</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-amber-500 transition">Головна</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Меню</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-500 transition">Забронювати</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-500 transition">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>"},{"path":"contacts.html","content":"<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Картопляна Хата</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-amber-500/20 h-20 flex items-center shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">Картопляна Хата</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 font-medium transition">Забронювати</a>
+                <a href="contacts.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-neutral-400">
+        <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-amber-500">Контакти</span>
+    </div>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4 text-amber-500">Контакти</h1>
+            <p class="text-neutral-400">Зв'яжіться з нами або завітайте до закладу</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700 space-y-6">
+                <h2 class="text-2xl font-bold text-amber-400 mb-4">Наша адреса</h2>
+                <p class="text-neutral-300 text-lg">бульвар Олександрійський, 97<br>Біла Церква, Київська обл., Україна</p>
+                
+                <h2 class="text-2xl font-bold text-amber-400 pt-4 mb-4">Телефон</h2>
+                <p class="text-amber-500 text-xl font-bold">+380970383839</p>
+
+                <h2 class="text-2xl font-bold text-amber-400 pt-4 mb-4">Соціальні мережі</h2>
+                <p>
+                    <a href="https://www.facebook.com/potatohousebc/" target="_blank" class="text-amber-500 hover:underline">Сторінка у Facebook</a>
+                </p>
+            </div>
+
+            <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700 flex flex-col justify-center items-center text-center">
+                <h2 class="text-2xl font-bold text-amber-400 mb-4">Карта</h2>
+                <p class="text-neutral-400 mb-6">Ми знаходимося в зручному місці міста Біла Церква.</p>
+                <a href="https://www.google.com/maps/place/%D0%9A%D0%B0%D1%80%D1%82%D0%BE%D0%BF%D0%BB%D1%8F%D0%BD%D0%B0+%D0%A5%D0%B0%D1%82%D0%B0/@49.795,30.11,17z/" target="_blank" class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-xl font-semibold transition">Відкрити у Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-neutral-400 py-12 border-t border-neutral-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-amber-500 text-lg font-bold mb-4">Картопляна Хата</h3>
+                <p>Затишна піцерія у Білій Церкві для всієї родини.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Контакти</h4>
+                <p>бульвар Олександрійський, 97</p>
+                <p>Біла Церква, Україна</p>
+                <p class="mt-2 text-amber-400">+380970383839</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Навігація</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-amber-500 transition">Головна</a></li>
+                    <li><a href="services.html" class="hover:text-amber-500 transition">Меню</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-500 transition">Забронювати</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-500 transition">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
