@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Картопляна Хата — Контакти</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+  html { scroll-behavior: smooth; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-gray-900">Картопляна Хата</a>
+      <nav class="hidden md:flex items-center gap-2">
+        <a href="index.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Головна</a>
+        <a href="about.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Про нас</a>
+        <a href="services.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Меню</a>
+        <a href="gallery.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Галерея</a>
+        <a href="booking.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Забронювати</a>
+        <a href="contacts.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg font-semibold">Контакти</a>
+      </nav>
+      <button id="mobile-toggle" class="md:hidden text-3xl text-gray-700">☰</button>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden flex flex-col px-6 pb-4 gap-2 bg-white border-t border-gray-100">
+      <a href="index.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Головна</a>
+        <a href="about.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Про нас</a>
+        <a href="services.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Меню</a>
+        <a href="gallery.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Галерея</a>
+        <a href="booking.html" class="text-gray-700 hover:bg-amber-50 px-4 py-2 rounded-lg font-medium transition">Забронювати</a>
+        <a href="contacts.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg font-semibold">Контакти</a>
+    </nav>
+  </header>
+<nav class="text-sm text-gray-500 py-4 max-w-6xl mx-auto px-6">
+    <a href="index.html" class="hover:text-amber-500 transition">Головна</a>
+    <span class="mx-2">›</span>
+    <span class="text-gray-800 font-medium">Контакти</span>
+  </nav>
+
+<main class="max-w-6xl mx-auto px-6 pb-20 pt-6">
+  <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Контакти</h1>
+  <p class="text-gray-700 leading-relaxed mb-4">Сторінка в розробці.</p>
+</main>
+
+<footer class="bg-gray-900 text-gray-300 py-12 mt-20">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">Картопляна Хата</h3>
+        <p class="text-sm text-gray-400">Біла Церква, Україна</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Контакти</h4>
+        <p class="text-sm text-gray-400">бульвар Олександрійський, 97, Біла Церква, Київська обл., Україна</p>
+        <p class="text-sm text-gray-400 mt-2">📞 +380970383839</p>
+        
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Social</h4>
+        
+        <p class="text-sm mt-2"><a href="https://www.facebook.com/potatohousebc/" target="_blank" class="text-gray-400 hover:text-amber-400 transition">Facebook</a></p>
+      </div>
+    </div>
+    <div class="text-center text-xs mt-8 text-gray-500">© 2026 Картопляна Хата</div>
+  </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+
+</body>
+</html>
